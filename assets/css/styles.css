@@ -17,6 +17,23 @@
     padding-top: 100px;
 }
 
+.profileLink a {
+	color:#000000;
+	text-decoration: none;
+}
+.profileLink a:visited {
+	color:#000000;
+	text-decoration: none;
+}
+.profileLink a:hover {
+	color:#000000;
+	text-decoration: none;
+}
+.profileLink a:active {
+	color:#000000;
+	text-decoration: none;
+}
+
 
 .BaseProfileCoreInfo-module_panel {
 	position: relative;

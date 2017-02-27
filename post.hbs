@@ -1,5 +1,15 @@
 {{!< default}}
 {{#post}}
+<section class="BaseHeader-module_header">
+        <div class="BaseHeader-module_wrapper ">
+          <img id="ProfileHeaderImage" class="BaseHeader-module_headerImage" src="{{#if @blog.cover}}{{@blog.cover}}{{else}}https://res.delve.office.com/delve/versionless/urbanimg3_large.jpg{{/if}}" />
+        </div>
+      </section>
+      <div class="ms-Grid"> 
+        <div class="ms-Grid-row ms-slideUpIn10">
+            <div class="ms-Grid-col ms-sm2 ms-md2 ms-lg2"></div>
+          <div class="ms-Grid-col ms-sm12 ms-md12 ms-lg8">
+<div class="blogPane-container BaseContentPane-module_container ">
     <div class="c-post-view {{post_class}}">
         <div class="c-page-title">
             <h1 class="c-page-title__heading">
@@ -19,4 +29,6 @@
             <!--{{> "comments"}}-->
         </div>
     </div>
+ </div>
+
 {{/post}}

@@ -44,11 +44,10 @@
                             <span class="CardLocation-module_compact">
                               
                                 {{#if tags}}
-                                    in
                                     <span class="c-post-list__meta__tags">
                                         {{#foreach tags}}
                                             <a tabindex="-1" href="{{url}}" title="{{name}}" class="CardLocation-module_button o365button">
-                                                <i class="ms-Icon ms-Icon--News" aria-hidden="true"></i> #{{name}}
+                                                <i class="ms-Icon ms-Icon--NotePinned" aria-hidden="true"></i> {{name}}
                                             </a>
                                         {{/foreach}}
                                     </span>

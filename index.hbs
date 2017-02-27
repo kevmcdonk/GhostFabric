@@ -1,4 +1,16 @@
 {{!< default}}
+<section class="BaseHeader-module_header">
+        <div class="BaseHeader-module_wrapper ">
+          <img id="ProfileHeaderImage" class="BaseHeader-module_headerImage" src="{{#if @blog.cover}}{{@blog.cover}}{{else}}https://res.delve.office.com/delve/versionless/urbanimg3_large.jpg{{/if}}" />
+        </div>
+      </section>
+      <div class="ms-Grid"> 
+        <div class="ms-Grid-row ms-slideUpIn10">
+          <div class="ms-Grid-col ms-sm6 ms-md4 ms-lg1"></div>
+          <div class="ms-Grid-col profilePane-container ms-sm6 ms-md4 ms-lg2">
+            {{>"sidebar"}}
+          </div>
+          <div class="ms-Grid-col ms-sm6 ms-md8 ms-lg8">
 <div class="blogPane-container BaseContentPane-module_container ">
               <div class="BaseContentPaneBox-module_container" role="region" aria-label="Get back to your recent documents">
                 
@@ -45,11 +57,10 @@
                             <span class="CardLocation-module_compact">
                               
                                 {{#if tags}}
-                                    in
                                     <span class="c-post-list__meta__tags">
                                         {{#foreach tags}}
                                             <a tabindex="-1" href="{{url}}" title="{{name}}" class="CardLocation-module_button o365button">
-                                                <i class="ms-Icon ms-Icon--News" aria-hidden="true"></i> #{{name}}
+                                                <i class="ms-Icon ms-Icon--NotePinned" aria-hidden="true"></i> {{name}}
                                             </a>
                                         {{/foreach}}
                                     </span>
@@ -72,3 +83,9 @@
 
 
 {{pagination}}
+          </div>
+          
+        </div>
+      </div>
+
+
