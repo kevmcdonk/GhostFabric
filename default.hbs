@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+    {{>"head"}}
+    {{ghost_head}}
+</head>
+
+<body class="ms-Fabric">
+    <div class="pageContainer">
+      <section class="BaseHeader-module_header">
+        <div class="BaseHeader-module_wrapper ">
+          <img id="ProfileHeaderImage" class="BaseHeader-module_headerImage" src="{{#if @blog.cover}}{{@blog.cover}}{{else}}https://res.delve.office.com/delve/versionless/urbanimg3_large.jpg{{/if}}" />
+        </div>
+      </section>
+      <div class="ms-Grid"> 
+        <div class="ms-Grid-row ms-slideUpIn10">
+          <div class="ms-Grid-col ms-sm6 ms-md4 ms-lg1"></div>
+          <div class="ms-Grid-col profilePane-container ms-sm6 ms-md4 ms-lg2">
+            {{>"sidebar"}}
+          </div>
+          <div class="ms-Grid-col ms-sm6 ms-md8 ms-lg8">
+            {{{body}}}
+          </div>
+          
+        </div>
+      </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<div class="blogPane-container BaseContentPane-module_container ">
+              <div class="BaseContentPaneBox-module_container" role="region" aria-label="Get back to your recent documents">
+                
+                <div class="ms-Grid">
+                  <div class="ms-Grid-row">
+                    {{#foreach posts}}
+                    <div class="ModifiedItemsBox-module_document1 ms-Grid-col ms-sm12 ms-md12 ms-lg6 ms-xl4 ms-xxl3">
+                      <div tabindex="0" class="UnifiedCard-module_containerBorder UnifiedCard-module_container" >
+                        <div>
+                          <div class="TidbitCompact-module_container" data-selector="tidbit">
+                            <div class="ms-fontSize-xl TidbitCompact-module_imageWrapper">
+                              <i class="ms-Icon ms-Icon--News" aria-hidden="true"></i>
+                            </div>
+                            <span title="Today" class="TidbitCompact-module_tidbitTime"> {{date format="MMMM DD, YYYY"}}</span>
+                          </div>
+                          <div class="UnifiedCard-module_previewAndLocationContainer">
+                            <a tabindex="-1" class="Preview-module_linkWrapper" href="{{url}}">
+                            <div class="Preview-module_previewImageContainer">
+                              <button tabindex="-1" class="Preview-module_link" aria-hidden="true" href="{{url}}">
+                                <div class="cardImageContainer">
+                                  <div class="PreviewImageWrapper-module_containerWrapper">
+                                    <img class="BackgroundElement-module_pattern" src="{{image}}" style="left: 50%; transform: translate(-50%, -50%) rotate(158deg) scale(0.858);" alt="An image showing the document preview.">
+                                  </div>
+                                </div>
+                                <div class="Preview-module_openDocumentOverlay">
+                                  <span class="Preview-module_openDocumentOverlayText ms-font-weight-semibold">
+                                    Open<i class="Preview-module_iconOpen ms-Icon ms-Icon--folderOpen"></i>
+                                  </span>
+                                </div>
+                              </button>
+                            </div>
+                          </a>
+                        </div>
+                        <a tabindex="-1" class="Title-module_linkWrapper" href="{{url}}"><div class="Title-module_titleWrapper">
+                          <div class="FlexibleCardTitle-module_container">
+                            <h3 title="{{title}}" class="FlexibleCardTitle-module_title ms-font-m-plus ms-font-weight-semilight">
+                              <div>{{title}}</div>
+                            </h3>
+                          </div>
+                          </div>
+                        </a>
+                        <div class="UnifiedCard-module_additionalDataContainer">
+                          <div class="UnifiedCard-module_locationWrapper ms-font-weight-regular">
+                            <span class="CardLocation-module_compact">
+                              
+                                {{#if tags}}
+                                    in
+                                    <span class="c-post-list__meta__tags">
+                                        {{#foreach tags}}
+                                            <a tabindex="-1" href="{{url}}" title="{{name}}" class="CardLocation-module_button o365button">
+                                                <i class="ms-Icon ms-Icon--News" aria-hidden="true"></i> #{{name}}
+                                            </a>
+                                        {{/foreach}}
+                                    </span>
+                                {{/if}}           
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    {{/foreach}}
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
