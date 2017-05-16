@@ -594,7 +594,7 @@ html[dir=ltr] .BaseContentPaneBox-module_seeAllButton span {
 	font-size: 12px;
 	position: relative;
 	outline: none;
-	height: 300px;
+	height: 380px;
 	min-width: 180px;
 }
 html[dir=ltr] .UnifiedCard-module_container {
@@ -874,7 +874,7 @@ html[dir=ltr] .Title-module_titleWrapper, html[dir=rtl] .Title-module_titleWrapp
 	margin: 10px;
 }
 .FlexibleCardTitle-module_container {
-	max-height: 58px;
+	max-height: 250px;
 	line-height: 28px;
 	overflow: hidden;
 	word-wrap: break-word;
