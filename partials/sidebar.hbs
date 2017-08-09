@@ -13,31 +13,36 @@
                         <i class="ms-Icon ms-Icon--onedrive"></i>
                         <a tabindex="0" title="{{@blog.description}}" href="/" >{{@blog.description}}</a>
                       </div>
-
+                      {{#if @blog.navigation}}
+                      <p>Test</p>
+                        {{"navigation"}}
+                      {{/if}}
+                       
                       <div>
                         <div class="profileLink">
                           <a href="https://www.twitter.com/{{@blog.twitter}}" tabindex="0" title="Twitter">
-                            <i class="icon-twitter-squared ms-fontSize-xxl"></i> Twitter
+                            <i class="icon-twitter-squared ms-fontSize-xxl"></i> TwitterXXX
                           </a>
                         </div>
                         <div class="profileLink">
-                          <a tabindex="1" title="LinkedIn">
+                          <a tabindex="1" title="LinkedIn" href="https://www.linkedin.com/in/kevmcdonnell/">
                             <i class="icon-linkedin-squared ms-fontSize-xxl"></i> LinkedIn
                           </a>
                         </div>
-                        <div class="profileLink">
-                          <a tabindex="2" title="Flipboard">
-                            <i class="icon-book ms-fontSize-xxl"></i>  Flipboard
-                          </a>
-                        </div>
                          <div class="profileLink">
-                          <a tabindex="3" title="Github">
+                          <a tabindex="3" title="Github" href="https://github.com/kevmcdonk">
                             <i class="icon-git-squared ms-fontSize-xxl" aria-hidden="true"></i>  Github
                           </a>
                         </div>
                         <div class="profileLink">
                           <a href="/rss" tabindex="4" title="RSS">
                             <i class="icon-rss-squared ms-fontSize-xxl" aria-hidden="true"></i>  RSS
+                          </a>
+                        </div>
+                        <div style="height:40px"></div>
+                        <div class="profileLink">
+                          <a href="http://www.ballardchalmers.com" tabindex="4" title="Ballard Chalmers">
+                            <img src="{{asset "img/bc-logo-n-2x.png"}}" style="width:180px;"/>
                           </a>
                         </div>
                       </div>
