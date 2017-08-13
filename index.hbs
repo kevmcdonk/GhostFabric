@@ -1,7 +1,7 @@
 {{!< default}}
 <section class="BaseHeader-module_header">
         <div class="BaseHeader-module_wrapper ">
-          <img id="ProfileHeaderImage" class="BaseHeader-module_headerImage" src="{{#if @blog.cover}}{{@blog.cover}}{{else}}https://res.delve.office.com/delve/versionless/urbanimg3_large.jpg{{/if}}" />
+          <img id="ProfileHeaderImage" class="BaseHeader-module_headerImage" src="{{#if @blog.cover_image}}{{@blog.cover_image}}{{else}}https://res.delve.office.com/delve/versionless/urbanimg3_large.jpg{{/if}}" />
         </div>
       </section>
       <div class="ms-Grid"> 
@@ -32,7 +32,7 @@
                               <button tabindex="-1" class="Preview-module_link" aria-hidden="true" href="{{url}}">
                                 <div class="cardImageContainer">
                                   <div class="PreviewImageWrapper-module_containerWrapper" style="background-repeat: no-repeat;background-position: center top;width:100%; background-size:cover;
-          background-image:url('{{image}}');">
+          background-image:url('{{img_url feature_image}}');">
                                     </div>
                                 </div>
                                 <div class="Preview-module_openDocumentOverlay">
